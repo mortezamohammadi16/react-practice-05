@@ -1,0 +1,51 @@
+// products.js
+export const products = [
+  {
+    id: 1,
+    title: "MacBook Air M1",
+    category: "laptop",
+    price: 950,
+    rating: 4.8,
+    inStock: true,
+  },
+  {
+    id: 2,
+    title: "iPhone 13",
+    category: "mobile",
+    price: 780,
+    rating: 4.6,
+    inStock: false,
+  },
+  {
+    id: 3,
+    title: "Samsung Galaxy S22",
+    category: "mobile",
+    price: 720,
+    rating: 4.5,
+    inStock: true,
+  },
+  {
+    id: 4,
+    title: "Asus ZenBook",
+    category: "laptop",
+    price: 1100,
+    rating: 4.4,
+    inStock: true,
+  },
+  {
+    id: 5,
+    title: "Sony WH-1000XM5",
+    category: "accessory",
+    price: 380,
+    rating: 4.9,
+    inStock: true,
+  },
+  {
+    id: 6,
+    title: "Logitech MX Master 3",
+    category: "accessory",
+    price: 120,
+    rating: 4.7,
+    inStock: false,
+  },
+];
