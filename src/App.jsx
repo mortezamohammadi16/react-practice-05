@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { products } from "./data/Product";
 import Cards from './pages/Cards';
+import Header from './pages/Header';
 
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
 
   return (
     <>
-    <h1 className='flex text-3xl pt-2.5 pl-3'>Product List</h1>
+    <Header />
+    <h1 className='flex text-3xl pt-2.5 pl-6'>Product List</h1>
     <div className='flex flex-wrap gap-4 pl-3'>
         {products.map((product)=>(
           <Cards 
