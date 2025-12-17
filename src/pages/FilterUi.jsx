@@ -1,11 +1,7 @@
 import React from 'react';
 
-const FilterUi = ({
-  price,
-  onPriceChange,
-  category,
-  onCategoryChange,
-}) => {
+const FilterUi = ({ price, onPriceChange, category, onCategoryChange,}) => {
+  
   return (
     <div className='flex justify-between'>
       <div className='flex'>

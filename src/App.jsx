@@ -9,28 +9,22 @@ function App() {
   const [price, setPrice] = useState("all")
   const [category, setCategory] = useState("all")
 
-    let filteredProducts = [...products];
-     //  sort price
+  let filteredProducts = [...products]
+
   if (price === "highest") {
     filteredProducts.sort((a, b) => b.price - a.price);
   }
 
   if (price === "lowest") {
-    filteredProducts.sort((a, b) => a.price - b.price);
+    filteredProducts.sort((a,b)=> a.price - b.price);
   }
 
-  //  filter  category
-  if (category !== "all") {
+  //category filter
+  if (category !== "all"){
     filteredProducts = filteredProducts.filter(
-      (product) => product.category === category
+      (product)=> product.category === category
     );
   }
-
-  
-
-  
-
-  
 
   return (
     <>
