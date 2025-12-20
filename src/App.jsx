@@ -3,6 +3,7 @@ import { products } from "./data/Product";
 import Cards from './pages/Cards';
 import Header from './pages/Header';
 import FilterUi from './pages/FilterUi';
+import ModalShowing from './pages/ModalShowing';
 
 
 function App() {
@@ -26,6 +27,9 @@ function App() {
     );
   }
 
+  const [openModal, setOpenModal] = useState(false)
+
+
   return (
     <>
     <Header />
@@ -45,6 +49,13 @@ function App() {
           />
         ))}
     </div>
+        <div className=' flex justify-center mt-2.5 bg-blue-700 text-white w-[250px] h-8 mx-auto items-center rounded-md mb-4'>
+         <button onClick={()=> setOpenModal(true)} className='cursor-pointer' >open modal</button>
+      </div>
+    {openModal && (
+      <ModalShowing onClose={()=>setOpenModal(false)} />
+    )}
+    
     
     </>
   )
